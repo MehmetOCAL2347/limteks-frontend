@@ -1,6 +1,6 @@
 <template>
   <div id="app-body">
-    <div>
+    <div id="the-header">
       <the-header></the-header>
     </div>
     <div>
@@ -49,6 +49,11 @@ body {
   justify-content: space-between;
 }
 
+#the-header{
+  margin: 0;
+  padding: 0;
+}
+
 li {
   list-style-type: none;
 }
@@ -56,7 +61,27 @@ a {
   text-decoration: none;
 }
 
-/* :root { // Renkleri gircez
-} */
+:root {
+
+  /* color */
+  --main: #000C66;
+  --primary-blue: #000C66;
+  --light-blue: #1974d2;
+  --dark-blue: #050a30;
+
+  --primary-white: white;
+  --primary-alert-red: red;
+  --text-hover: #ef4035;
+
+  /** font */
+  --font-size-large: 28px;
+  --font-size-medium: 20px;
+  --font-size-small: 14px;
+  --font-size-xSmall: 11px;
+
+  --font-weight-bolder: bolder;
+  --font-weight-light: light;
+  --font-weighy-lighter: 200;
+}
 
 </style>
