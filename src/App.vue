@@ -28,28 +28,29 @@ export default {
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Ubuntu:wght@300&display=swap");
 
 * {
   box-sizing: border-box;
 }
 
 html {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   min-height: 100%;
 }
 
 body {
   margin: 0;
 }
-#app-body{
+#app-body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-#the-header{
+#the-header {
   margin: 0;
   padding: 0;
 }
@@ -62,10 +63,9 @@ a {
 }
 
 :root {
-
   /* color */
-  --main: #000C66;
-  --primary-blue: #000C66;
+  --main: #000c66;
+  --primary-blue: #000c66;
   --light-blue: #1974d2;
   --dark-blue: #050a30;
 
@@ -83,5 +83,4 @@ a {
   --font-weight-light: light;
   --font-weighy-lighter: 200;
 }
-
 </style>

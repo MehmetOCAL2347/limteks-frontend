@@ -1,18 +1,6 @@
 <template>
   <nav>
     <div id="navbar">
-      <!-- <div id="logoContainer">
-        <img id="logo" src="../../src/assets/logo_new.jpg" alt="limteks_logo">
-    </div> -->
-      <!-- <div>
-        <base-button :link="true" mode="text-color-white a-base">1</base-button>
-      </div>
-      <div>
-        <base-button :link="true" mode="text-color-white a-base">2</base-button>
-      </div>
-      <div>
-        <base-button :link="true" mode="text-color-white a-base">3</base-button>
-      </div> -->
       <div id="options">
         <ul id="options-ul">
           <li>
@@ -26,7 +14,7 @@
             <base-button
               :to="option.link"
               :link="true"
-              mode="text-color-white a-base"
+              mode="text-color-white a-base light"
               >{{ option.name }}</base-button
             >
           </li>
@@ -44,22 +32,22 @@ export default {
                 {
                     id: 0,
                     name: 'Koleksiyon',
-                    link: '/'
+                    link: '/productCollection'
                 },
                 {
                     id: 1,
                     name: 'Kampanyalar',
-                    link: '/'
+                    link: '/campaignDetails'
                 },
                 {
                     id: 2,
                     name: 'Katalog',
-                    link: '/'
+                    link: '/productCatalog'
                 },
                 {
                     id: 3,
                     name: 'İletişim',
-                    link: '/'
+                    link: '/companyCommunication'
                 }
             ]
         }
@@ -72,16 +60,13 @@ export default {
 #navbar {
   margin: 0;
   width: 100%;
-  min-height: 100px;
+  min-height: 80px;
   background-color:var(--main);
-  /**#F9D51D ->sarı
-  #323033-> gri */
 }
 
 #logo {
-  width: 100px;
-  height: 100px;
-  /* border-radius: 50%; */
+  width: 80px;
+  height: 80px;
 }
 
 #options-ul {

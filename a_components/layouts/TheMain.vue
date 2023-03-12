@@ -1,15 +1,3 @@
 <template>
-    <div>
-        TheMain
-    </div>
+    <router-view></router-view>
 </template>
-
-<script lang="js">
-export default {
-    
-}
-</script>
-
-<style scoped>
-
-</style>
