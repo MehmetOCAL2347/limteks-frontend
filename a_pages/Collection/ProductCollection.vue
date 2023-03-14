@@ -1,4 +1,5 @@
 <template>
+  <!-- Üstte bir fotograf kategoriye ait konulabilir, Pagination ve solda filtreleme gerekebilir -->
   <div id="productCollection">
     <ul class="ulItem">
       <li v-for="product in productList" :key="product.id">
@@ -32,7 +33,7 @@ export default {
         {
           id: 2,
           imageUrl: "https://www.berkemobilya.com.tr/media/catalog/product/cache/1/image/2000x1120/8cda07290adf5b61edee0d4066c5caef/m/r/mrr_2_.jpg",
-          productName: "Retro Çalışma Odası",
+          productName: "Retro Çalışma Odası Retro Çalışma Odası",
           productPrice: "19,000",
         },
         {
@@ -49,7 +50,6 @@ export default {
 
 <style scoped>
 #productCollection {
-  background-color: red;
   width: 80%;
   margin: 0 auto;
   min-height: 80vh;
@@ -57,14 +57,11 @@ export default {
 }
 
 .ulItem {
-  padding: 0;
+  margin: 0 auto;
+  padding-inline-start: 0;
   display: grid;
-  grid-template-columns: auto auto; /** auto auto yapmak 2 sütun anlamına gelir, auto auto auto yapsak 3 sütun olurdu  */
+  grid-template-columns: 33% 33% 33%; /** auto auto yapmak 2 sütun anlamına gelir, auto auto auto yapsak 3 sütun olurdu  */
   gap: 20px;
 }
 
-.ulItem li {
-  /* grid-column-start: 1;
-  grid-column-end: 2; */
-}
 </style>

@@ -65,6 +65,8 @@ a {
 :root {
   /* color */
   --main: #000c66;
+  --secondary: #f9d51d;
+
   --primary-blue: #000c66;
   --light-blue: #1974d2;
   --dark-blue: #050a30;
