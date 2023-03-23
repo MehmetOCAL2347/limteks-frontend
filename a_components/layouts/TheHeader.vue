@@ -34,16 +34,16 @@ export default {
                     name: 'Koleksiyon',
                     link: '/productCollection'
                 },
-                {
-                    id: 1,
-                    name: 'Kampanyalar',
-                    link: '/campaignDetails'
-                },
-                {
-                    id: 2,
-                    name: 'Katalog',
-                    link: '/productCatalog'
-                },
+                // {
+                //     id: 1,
+                //     name: 'Kampanyalar',
+                //     link: '/campaignDetails'
+                // },
+                // {
+                //     id: 2,
+                //     name: 'Katalog',
+                //     link: '/productCatalog'
+                // },
                 {
                     id: 3,
                     name: 'İletişim',
@@ -58,6 +58,7 @@ export default {
 
 <style scoped>
 #navbar {
+  position: fixed;
   margin: 0;
   width: 100%;
   min-height: 80px;
