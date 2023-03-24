@@ -1,20 +1,13 @@
 <template>
   <div id="communications">
-    <div id="Info">
-      <ul>
-        <li>
-          <h4>{{ arrayOfTitles.titleInfoContact }}</h4>
-        </li>
-        
-      </ul>
-    </div>
-    <div id="contactUs">
-      <ul>
-        <li>
-          <h4>{{ arrayOfTitles.titleSendEmail }}</h4>
-        </li>
-      </ul>
-    </div>
+    <contact-info
+      :title="arrayOfTitles.titleInfoContact"
+      :arrayOfContact="arrayOfContact"
+      :arrayOfSocialMedia="arrayOfSocialMedia"
+    ></contact-info>
+    <contact-us
+      :title="arrayOfTitles.titleSendEmail"
+    ></contact-us>    
   </div>
 </template>
 
@@ -26,6 +19,28 @@ export default {
         titleInfoContact: "İletişim",
         titleSendEmail: "Bize Ulaşın",
       },
+      arrayOfContact: [
+        {
+          explanation:
+            "Organize Sanayi Bölgesi 24. Cad. No:23 Kayseri - TÜRKİYE",
+          mode: "fa-solid fa-location-dot",
+        },
+        {
+          explanation: "+90 541 553 49 62",
+          mode: "fa-solid fa-phone",
+        },
+        {
+          explanation: "limteksgroup@gmail.com",
+          mode: "fa-solid fa-envelope",
+        },
+      ],
+      arrayOfSocialMedia: [
+        {
+          explanation: "Instagramdan bizi takip edin",
+          mode: "fa-brands fa-square-instagram",
+          href: "https://www.instagram.com/limteksgrupfurniture/",
+        },
+      ],
     };
   },
 };
@@ -33,11 +48,10 @@ export default {
 
 <style scoped>
 #communications {
-  background-color: red;
   width: 80%;
   margin: 0 auto;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 </style>
