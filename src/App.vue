@@ -85,4 +85,24 @@ a {
   --font-weight-light: light;
   --font-weighy-lighter: 200;
 }
+
+.text-center {
+  text-align: center;
+}
+
+.text-bold {
+  font-weight: var(--font-weight-bolder);
+  font-size: var(--font-size-large);
+}
+
+.text-light {
+  font-weight: var(--font-weight-light);
+  font-size: var(--font-size-small);
+}
+
+.text-alert {
+  font-size: var(--font-size-xSmall);
+  color: var(--primary-alert-red);
+}
+
 </style>
