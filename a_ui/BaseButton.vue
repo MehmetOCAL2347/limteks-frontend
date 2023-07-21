@@ -1,64 +1,64 @@
 <template>
-    <button :id="id" :style="buttonStyle" v-if="!link" :class="mode">
-        <slot></slot>
-    </button>
-    <router-link :id="id" v-else :to="to" :class="mode">
-        <slot></slot>
-    </router-link>
+  <button :id="id" :style="buttonStyle" v-if="!link" :class="mode">
+    <slot></slot>
+  </button>
+  <router-link :id="id" v-else :to="to" :class="mode">
+    <slot></slot>
+  </router-link>
 </template>
 
 <script>
 export default {
-    props: {
-        id: {
-            type: String,
-            required: false
-        },
-        link: {
-            type: Boolean,
-            required: false,
-            default: false
-        },
-        to: {
-            type: String,
-            required: false,
-            default: '/'
-        },
-        mode: {
-            type: String,
-            required: false,
-            default: null
-        },
-        widthValue: {
-            type: Number,
-            required: false,
-            default: 100
-        }
+  props: {
+    id: {
+      type: String,
+      required: false,
     },
-    computed: {
-        buttonStyle(){
-            return { '--width-value': this.widthValue + '%' }
-        }
-    }
-
-}
+    link: {
+      type: Boolean,
+      required: false,
+      default: false,
+    },
+    to: {
+      type: String,
+      required: false,
+      default: "/",
+    },
+    mode: {
+      type: String,
+      required: false,
+      default: null,
+    },
+    widthValue: {
+      type: Number,
+      required: false,
+      default: 100,
+    },
+  },
+  computed: {
+    buttonStyle() {
+      return { "--width-value": this.widthValue + "%" };
+    },
+  },
+};
 </script>
 
 <style scoped>
 a {
-  margin-left:10px;
+  margin-left: 10px;
   margin-right: 10px;
   text-decoration: none;
   border-radius: 3px;
   padding: 10px;
-  white-space:nowrap;
+  white-space: nowrap;
   text-align: center;
 }
 
-.a-base.router-link-active {  /** router-link-active demek aktif olan routerı bul ona göre butonlara işlem yaptır */
+.a-base.router-link-active {
+  /** router-link-active demek aktif olan routerı bul ona göre butonlara işlem yaptır */
   /* background-color: var(--primary-white);
   color: var(--primary-blue); */
-  transition: .4s ease-in-out;
+  transition: 0.4s ease-in-out;
   border: 2px solid var(--light-blue);
 }
 
@@ -66,13 +66,13 @@ a {
 button:hover{
   background-color: var(--primary-white);
   color: var(--primary-blue);
-  transition: .4s ease-in-out;  
-  cursor: pointer;  
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
 }
 
 .a-second:hover,
-.a-second:active{
-  transition: .2s ease-in-out;
+.a-second:active {
+  transition: 0.2s ease-in-out;
   color: var(--text-hover);
 }
 button {
@@ -91,7 +91,7 @@ button {
   font-size: var(--font-size-large);
 }
 
-.mid{
+.mid {
   font-weight: var(--font-weight-bolder);
   font-size: var(--font-size-medium);
 }

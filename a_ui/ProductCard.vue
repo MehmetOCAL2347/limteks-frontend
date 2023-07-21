@@ -19,6 +19,8 @@ export default {
     productName: String,
     productPrice: String,
     srcValue: String,
+    to: String,
+    link: String
   },
 };
 </script>

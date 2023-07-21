@@ -36,7 +36,7 @@ export default {
 }
 
 html {
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Ubuntu", sans-serif !important;
   min-height: 100%;
 }
 

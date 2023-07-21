@@ -5,9 +5,9 @@
       :arrayOfContact="arrayOfContact"
       :arrayOfSocialMedia="arrayOfSocialMedia"
     ></contact-info>
-    <contact-us
+    <!-- <contact-us
       :title="arrayOfTitles.titleSendEmail"
-    ></contact-us>    
+    ></contact-us>     -->
   </div>
 </template>
 

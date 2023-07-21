@@ -1,6 +1,6 @@
 <template>
   <!-- Üstte bir fotograf kategoriye ait konulabilir, Pagination ve solda filtreleme gerekebilir -->
-  <div id="products">
+  <div id="furniture">
     <div id="categoryImage">
       <!-- <img src="https://www.mobilyadiyari.com/oslo-koltuk-takimi-mobilya-diyari-630-19-B.jpg" alt="category_img"> -->
     </div>
@@ -30,6 +30,7 @@ export default {
             "https://muzaffermobilya.com/wp-content/uploads/2022/03/urun-aura-koltuk-takimi-01.jpg",
           productName: "Retro Genç Odası",
           productPrice: "13,000",
+          to: "/0",
         },
         {
           id: 1,
@@ -42,7 +43,7 @@ export default {
           id: 2,
           imageUrl:
             "https://www.berkemobilya.com.tr/media/catalog/product/cache/1/image/2000x1120/8cda07290adf5b61edee0d4066c5caef/m/r/mrr_2_.jpg",
-          productName: "Retro Çalışma Odası Retro Çalışma Odası",
+          productName: "Retro Çalışma Odası",
           productPrice: "19,000",
         },
         {
@@ -54,14 +55,14 @@ export default {
         },
       ],
     };
-  }
+  },
 };
 </script>
 
 <style scoped>
 #categoryImage {
   /* position: relative; */
-  background: url("https://images.unsplash.com/photo-1519974719765-e6559eac2575?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bWluaW1hbGlzdCUyMGZ1cm5pdHVyZXxlbnwwfHwwfHw%3D&w=1000&q=80")
+  background: url("https://statickelebek.mncdn.com/images/thumbs/0009274_martis-tekli-koltuk.jpeg")
     no-repeat;
   background-size: cover;
   background-position: center;
